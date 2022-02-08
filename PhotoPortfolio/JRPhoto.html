@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JR Photography</title>
+    <meta name="Home page for client" content="3135 Assignment 2">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="JRPhoto.css">
+</head>
+
+<body>
+<header>
+    <img src="images/JRLOGO.png" alt="Logo" class="center" width="50" height="250">
+</header>
+<ul class="center"> <!--Nav bar, links to 4 required pages-->
+    <li class="current"><a href="JRPhoto.html">Portfolio</a></li>
+    <li><a href="JRPhoto_Services.html">Services</a></li>
+    <li><a href="JRPhoto_AB.html">About Me</a></li>
+    <li><a href="JRPhoto_Contact.html">Contact</a></li>
+</ul>
+<hr>
+<main>
+    <h1>Portfolio</h1>
+    <div class="fix"> <!--Classes to make images appear neat in grid formation-->
+        <div class="container">
+            <!--Each photo links to subsections in portfolio. Caption underneath each photo while keeping organization-->
+            <figure>
+                <a href ="JRBW.html"><img src="images/B&W_Bentley.jpg" alt="baw" style="width:100%" class="link"></a>
+                <figcaption>Black & White</figcaption> <!--Name of the type of photo appears under photo-->
+            </figure>
+        </div>
+        <div class="container">
+            <figure>
+                <a href ="JRTexture.html"><img src="images/CAT_Track.jpg" alt="texture" style="width:100%" class="link">
+                </a>
+                <figcaption>Textures</figcaption>
+            </figure>
+        </div>
+        <div class="container">
+            <figure>
+                <a href = "JRNature.html"><img src="images/Wave.jpg" alt="nature" style="width:100%" class="link"></a>
+                <figcaption>Nature</figcaption>
+            </figure>
+        </div>
+    </div>
+<br> <!--Breaks line so images don't become too overlapped or break, moves them to the lines underneath-->
+    <div class="fix">
+        <div class="container">
+            <figure>
+                <a href = "JRMisc.html"><img src="images/Turtle.jpg" alt="misc" style="width:100%" class="link"></a>
+                <figcaption>Miscellaneous</figcaption>
+            </figure>
+        </div>
+        <div class="container">
+            <figure>
+                <a href = "JRLand.html"><img src="images/Night_Dock.jpg" alt="landscape" style="width:100%" class="link"></a>
+                <figcaption>Landscape</figcaption>
+            </figure>
+        </div>
+        <div class="container">
+            <figure>
+                <a href = "JRAnimals.html"><img src="images/Bentley.jpg" alt="wildlife" style="width:100%" class="link"></a>
+                <figcaption>Animals</figcaption>
+            </figure>
+        </div>
+    </div>
+    <button onclick="window.location.href = 'JRPhoto.html';" class="center">Top</button>
+    <!--Button that reloads the page, bringing the user back to the top of the page once bottom is reached-->
+</main>
+
+<footer>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    &copy; Rypien 2019
+</footer>
+</body>
+</html>

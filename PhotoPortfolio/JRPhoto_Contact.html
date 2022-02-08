@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JR Contact Me</title>
+    <meta name="Contact page for client" content="3135 Assignment 2">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="JRPhoto.css">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="js12/jquery.bxSlider.min.js"></script>
+    <script src="JRContact.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+<header>
+    <img src="images/JRLOGO.png" alt="Logo" class="center" width="50" height="250">
+</header>
+<ul class="center"> <!--Nav bar, links to 4 required pages-->
+    <li><a href="JRPhoto.html">Portfolio</a></li>
+    <li><a href="JRPhoto_Services.html">Services</a></li>
+    <li><a href="JRPhoto_AB.html">About Me</a></li>
+    <li class = "current"><a href="JRPhoto_Contact.html">Contact</a></li>
+</ul>
+<hr>
+<main>
+    <h1>Contact</h1>
+    <h2>If you have any questions, are interested in my work, or have general inquiries, this is the best place to contact me.
+    </h2>
+    <div id="form-messages"></div>
+    <form id="ajax-contact" method="post" action="mailer.php">
+        <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+<br>
+        <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+<br>
+        <div class="field">
+            <textarea id="message" name="message" placeholder="Type your question here!"></textarea>
+        </div>
+<br>
+        <div class="field">
+            <button type="submit" class = "center">Send</button>
+        </div>
+    </form>
+        <!--Button runs submit, verifying the user inputted data is correct -email must not be blank and include @,
+       Text area cannot be blank.-->
+
+        <ul id="slider">
+        <li>
+            <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="" title="Facebook: ">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.Instagram.com">
+            <img src="images/instal.png" alt="" title="Instagram: ">
+        </a>
+        </li>
+        <li>
+            <a href="https://www.Twitter.com">
+            <img src="images/Twitter.png" alt="" title="Twitter: ">
+            </a>
+        </li>
+    </ul>
+    <p id="pager"></p>
+
+</main>
+
+<footer>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    &copy; Rypien 2019
+</footer>
+</body>
+</html>
